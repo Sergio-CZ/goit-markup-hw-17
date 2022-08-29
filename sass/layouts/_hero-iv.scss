@@ -1,0 +1,127 @@
+.container.header-container {
+  display: flex;
+  padding: 0 0;
+}
+
+.container-team {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  /* margin-bottom: 60px; */
+}
+
+.hero-iv-team {
+  margin: 0 auto;
+  text-align: center;
+  /* width: 1600px; */
+  background-color: var(--color-button-grey);
+}
+
+.hero-iv-item {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  gap: 30px;
+}
+
+.hero-iv-item {
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.hero-iv-worker {
+  display: block;
+  width: 270px;
+  text-align: center;
+}
+
+.hero-iv-name {
+  padding-top: 30px;
+  margin-bottom: 10px;
+  color: var(--title-color);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.hero-iv-text {
+  margin-bottom: 16px;
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero-iv-soc {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-iv-social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  margin-bottom: 30px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-iv-social-link:hover,
+.hero-iv-social-link:focus {
+  background-color: var(--color-blue);
+}
+
+.hero-iv-social-link:hover .hero-iv-soc,
+.hero-iv-social-link:focus .hero-iv-soc {
+  fill: var(--color-white);
+}
+
+.hero-iv-clients {
+  display: flex;
+  padding: 16px 16px;
+  background-position: center;
+  background-size: contain;
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-iv-clients:hover,
+.hero-iv-clients:focus {
+  fill: var(--color-blue);
+}
+
+.hero-iv-main-clients {
+  display: flex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-iv-main-clients:hover,
+.main-clients:focus {
+  border: 1px solid var(--color-blue);
+}
+
+.hero-iv-clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+}
+
+.hero-iv-clients-item {
+  display: flex;
+  justify-self: center;
+  min-width: 170px;
+  max-width: 170px;
+}
