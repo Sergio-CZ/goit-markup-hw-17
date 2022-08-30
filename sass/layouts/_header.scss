@@ -1,4 +1,5 @@
-.header-line-border {
+.line-border {
+  /* padding: 25px 0; */
   border-bottom: 1px solid #ececec;
   margin: 0 auto;
 }
@@ -6,7 +7,7 @@
 .header-link {
   display: block;
   position: relative;
-  padding: 25px 1px;
+  padding: 25px 0;
   color: var(--color-blue);
   font-family: Roboto;
   font-weight: 500;
