@@ -1,16 +1,36 @@
-.hero-iii {
+.fields {
   padding-top: 0;
   margin: 0 auto;
   text-align: center;
 }
 
-.hero-iii-item {
-  display: block;
-  margin: 0 auto;
+.fields__title {
+  margin-bottom: 50px;
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
 }
 
-.hero-iii-desk {
+.fields__container {
+  display: flex;
+  align-items: center;
+}
+.fields__item {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.fields__thumb {
+  position: relative;
+}
+
+.fields__desk {
   display: flex;
   position: absolute;
   bottom: 0;
@@ -25,17 +45,4 @@
   font-size: 14px;
   line-height: 1.17;
   text-transform: uppercase;
-}
-
-.hero-iii-title {
-  margin-bottom: 50px;
-  color: var(--title-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-.hero-iii-item:not(:last-child) {
-  margin-right: 30px;
 }

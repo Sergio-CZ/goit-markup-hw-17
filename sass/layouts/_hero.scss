@@ -1,4 +1,18 @@
-.overlay1 {
+.hero {
+  padding-top: 0;
+  height: 600px;
+  text-align: center;
+  background-color: var(--color-footer);
+  margin: 0 auto 0;
+  width: 1600px;
+}
+
+.hero__container {
+  display: block;
+  align-items: center;
+}
+
+.hero--overlay {
   margin-left: 0;
   margin-right: auto;
   max-width: 1600px;
@@ -14,21 +28,7 @@
   background-position: center;
 }
 
-.hero {
-  padding-top: 0;
-  height: 600px;
-  text-align: center;
-  background-color: var(--color-footer);
-  margin: 0 auto 0;
-  width: 1600px;
-}
-
-.hero-container {
-  display: block;
-  align-items: center;
-}
-
-.hero-text {
+.hero__text {
   padding-top: 200px;
   margin: 0 auto 30px;
   width: 696px;
@@ -42,7 +42,7 @@
   letter-spacing: 0.06em;
 }
 
-.hero-btn {
+.button {
   display: inline-block;
   min-width: 200px;
   padding: 10px 32px;
@@ -58,9 +58,8 @@
   cursor: pointer;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--color-button-blue);
+  &:hover,
+  &:focus {
+    background-color: var(--color-button-blue);
+  }
 }

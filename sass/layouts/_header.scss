@@ -1,10 +1,41 @@
 .line-border {
-  /* padding: 25px 0; */
   border-bottom: 1px solid #ececec;
   margin: 0 auto;
 }
 
-.header-link {
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+  margin-right: 93px;
+  color: var(--color-black);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.header__web {
+  color: var(--color-blue);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.header__list {
+  display: flex;
+  margin-right: 305px;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.header__link {
   display: block;
   position: relative;
   padding: 25px 0;
@@ -15,14 +46,16 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--color-blue);
+  }
+  &:active {
+    color: var(--color-blue);
+  }
 }
 
-.header-link:hover,
-.header-link:focus {
-  color: var(--color-blue);
-}
-
-.current::after {
+.header--current::after {
   position: absolute;
   left: 0;
   display: block;
@@ -34,12 +67,9 @@
   border-radius: 2px;
 }
 
-.header-link:active {
-  color: var(--color-blue);
-}
-
-.header-link-web {
+.header__site {
   display: block;
+  position: relative;
   padding: 25px 0;
   color: var(--title-color);
   font-family: Roboto;
@@ -48,22 +78,33 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--color-blue);
+  }
 }
 
-.header-link-web:hover,
-.header-lin-webk:focus {
-  color: var(--color-blue);
+.header--current::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: "";
+  height: 4px;
+  width: 100%;
+  bottom: -1px;
+  background-color: var(--color-blue);
+  border-radius: 2px;
 }
-
-.header-link-web:active {
-  color: var(--color-blue);
-}
-
-.header-container {
+.header--contact {
   display: flex;
-  align-items: center;
-  /* justify-content: center;
-  margin-bottom: 25px; */
+  justify-content: flex-end;
+  margin-right: 0;
+  gap: 0;
+}
+
+.container.header {
+  display: flex;
+  padding: 0 0;
 }
 
 .header-container-port {
@@ -74,45 +115,16 @@
   gap: 8px;
 }
 
-.header-logo {
-  display: block;
-  margin-right: 93px;
-  color: var(--color-black);
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-}
-
-.header-logo-web {
-  color: var(--color-blue);
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-}
-
-.header-list {
-  display: flex;
-  margin-right: 305px;
-  justify-content: flex-start;
-  gap: 50px;
-}
-
-.header-contact-list {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.header-contact-item {
+.header__data {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.header-contact-link {
+.header__contact {
   display: flex;
   align-items: center;
   color: var(--text-color);
@@ -120,35 +132,30 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--color-blue);
+  }
 }
 
-.header-contact-item:not(:last-child) {
-  margin-right: 30px;
+.header__contact:hover .header__email,
+.header__contact:focus .header__email {
+  fill: var(--color-blue);
 }
 
-.header-mail-contact {
+.header__contact:hover .header__tel,
+.header__contact:focus .header__tel {
+  fill: var(--color-blue);
+}
+
+.header__email {
   margin-right: 10px;
   fill: var(--text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-tel-contact {
+.header__tel {
   margin-right: 10px;
   fill: var(--text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contact-link:hover,
-.header-contact-link:focus {
-  color: var(--color-blue);
-}
-
-.header-contact-link:hover .header-mail-contact,
-.header-contact-link:focus .header-mail-contact {
-  fill: var(--color-blue);
-}
-
-.header-contact-link:hover .header-tel-contact,
-.header-contact-link:focus .header-tel-contact {
-  fill: var(--color-blue);
 }
