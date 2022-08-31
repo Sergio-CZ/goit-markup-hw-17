@@ -1,6 +1,6 @@
 .clients {
   margin-bottom: 50px;
-  color: var(--title-color);
+  color: $title-color;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -16,7 +16,7 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    fill: var(--color-blue);
+    fill: $color-blue;
   }
 }
 
@@ -27,7 +27,7 @@
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    border: 1px solid var(--color-blue);
+    border: 1px solid $color-blue;
   }
 }
 

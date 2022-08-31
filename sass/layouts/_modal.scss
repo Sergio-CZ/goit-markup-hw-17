@@ -67,7 +67,7 @@
 }
 
 .backdrop__close:hover .backdrop__modular {
-  fill: var(--color-blue);
+  fill: $color-blue;
 }
 
 .backdrop__modular {
@@ -111,7 +111,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  color: var(--text-color);
+  color: $text-color;
   letter-spacing: 0.01em;
   outline-style: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -134,10 +134,10 @@
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    border-color: var(--color-blue);
+    border-color: $color-blue;
   }
   &:focus {
-    border-color: var(--color-blue);
+    border-color: $color-blue;
     outline-style: none;
   }
 
@@ -161,29 +161,29 @@
   color: rgba(117, 117, 117, 0.5);
   cursor: pointer;
   &:hover {
-    border-color: var(--color-blue);
+    border-color: $color-blue;
   }
   &:focus {
-    border-color: var(--color-blue);
+    border-color: $color-blue;
     outline-style: none;
   }
 }
 
 .backdrop__icon {
   position: absolute;
-  fill: var(--color-black);
+  fill: $color-black;
   left: 12px;
   top: 30px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    fill: var(--color-blue);
+    fill: $color-blue;
   }
 }
 
 .backdrop__input:hover + .backdrop__icon,
 .backdrop__input:focus + .backdrop__icon {
-  fill: var(--color-blue);
+  fill: $color-blue;
 }
 
 .online-comment::placeholder {
@@ -201,8 +201,8 @@
   height: 50px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--color-blue);
-  color: var(--color-white);
+  background-color: $color-blue;
+  color: $color-white;
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
@@ -212,7 +212,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: var(--color-button-blue);
+    background-color: $color-button-blue;
   }
 }
 
@@ -230,7 +230,7 @@
   align-items: center;
   justify-content: center;
   & a {
-    color: var(--color-blue);
+    color: $color-blue;
   }
 }
 
@@ -248,13 +248,13 @@
   padding-bottom: 0px;
   appearance: none;
   position: absolute;
-  background-color: var(--color-white);
+  background-color: $color-white;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox__input:checked + .checkbox__text .checkbox__icon {
   border: none;
-  background-color: var(--color-blue);
+  background-color: $color-blue;
   background-image: url("../images/icon-check-3.svg");
   background-size: contain;
   background-origin: border-box;
@@ -268,7 +268,7 @@
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  border: 2px solid var(--title-color);
+  border: 2px solid $title-color;
   border-radius: 2px;
   bottom: -3px;
   background-repeat: no-repeat;
@@ -283,6 +283,6 @@
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--color-blue);
+  color: $color-blue;
   text-decoration: underline;
 }

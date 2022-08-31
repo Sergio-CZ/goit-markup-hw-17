@@ -26,7 +26,7 @@
   width: 270px;
   height: 120px;
   background-position: center;
-  background-color: var(--color-button-grey);
+  background-color: $color-button-grey;
   background-size: contain;
   margin-bottom: 30px;
 }
@@ -46,7 +46,7 @@
 .rules__title {
   text-align: left;
   margin-bottom: 10px;
-  color: var(--title-color);
+  color: $title-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
@@ -55,7 +55,7 @@
 
 .rules__text {
   text-align: left;
-  color: var(--text-color);
+  color: $text-color;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
